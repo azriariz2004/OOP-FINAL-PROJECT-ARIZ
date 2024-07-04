@@ -1,0 +1,202 @@
+body.home-theme {
+  background-color: #f5f5dc;
+  color: #000;
+}
+
+body.seafood-theme {
+  background-color: #e0f7fa;
+  color: #004d40;
+}
+
+body.vegetarian-theme {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+}
+
+body.dessert-theme {
+  background-color: #fff0f6;
+  color: #880e4f;
+}
+
+body.beef-theme {
+  background-color: #fbe9e7;
+  color: #bf360c;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ff6f91;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #fff;
+}
+
+header nav button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #ff6f91;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+header nav button:hover {
+  background-color: #ff4a6e;
+}
+
+main {
+  padding: 20px;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+}
+
+.slides img.active {
+  display: block;
+}
+
+#searchSection {
+  margin: 20px 0;
+}
+
+#searchInput {
+  padding: 10px;
+  font-size: 1em;
+  width: 80%;
+}
+
+#searchSection button {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #ff6f91;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+}
+
+#searchSection button:hover {
+  background-color: #ff4a6e;
+}
+
+#categoriesSection {
+  margin: 20px 0;
+}
+
+#categoriesSection button {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #ff6f91;
+  color: #fff;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+}
+
+#categoriesSection button:hover {
+  background-color: #ff4a6e;
+}
+
+.recipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recipe {
+  width: calc(25% - 20px);
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.recipe img {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-title {
+  font-size: 1.2em;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #ffccd5;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0 0 10px;
+}
+
+footer input {
+  padding: 10px;
+  font-size: 1em;
+  width: 60%;
+}
+
+footer button {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #ff6f91;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer button:hover {
+  background-color: #ff4a6e;
+}
+
+.hidden {
+  display: none;
+}
+
+.recipe-details {
+  display: flex;
+  align-items: center;
+}
+
+.recipe-details img {
+  max-width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.recipe-info {
+  max-width: 600px;
+}
+
+#editDescription {
+  width: 100%;
+  height: 150px;
+  margin: 10px 0;
+}
+/* Add styles for remove button if needed */
+button {
+  margin-top: 10px;
+}
+

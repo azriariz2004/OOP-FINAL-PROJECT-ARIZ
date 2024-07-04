@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tastebite Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-theme">
+  <header>
+    <h1>Tastebite</h1>
+    <nav>
+      <button onclick="showHome()">Home</button>
+      <button onclick="showCategories()">Categories</button>
+      <button onclick="showSavedRecipes()">Saved Recipes</button>
+    </nav>
+  </header>
+  <main>
+    <section id="sliderSection">
+      <div class="slider">
+        <div class="slides">
+          <img src="images/slide1.jpg" alt="Slide 1">
+          <img src="images/slide2.jpg" alt="Slide 2">
+          <img src="images/slide3.jpg" alt="Slide 3">
+          <img src="images/slide4.jpg" alt="Slide 4">
+          <img src="images/slide5.jpg" alt="Slide 5">
+        </div>
+      </div>
+    </section>
+    <section id="searchSection">
+      <input type="text" id="searchInput" placeholder="Search recipes...">
+      <button onclick="searchRecipes()">Search</button>
+    </section>
+    <section id="categoriesSection">
+      <button onclick="filterByCategory('Seafood')">Seafood</button>
+      <button onclick="filterByCategory('Vegetarian')">Vegetarian</button>
+      <button onclick="filterByCategory('Dessert')">Dessert</button>
+      <button onclick="filterByCategory('Beef')">Beef</button>
+    </section>
+    <section id="recipesSection" class="recipe-grid"></section>
+    <footer>
+      <p>Daily cooking tips and recipes to your inbox!</p>
+      <input type="email" placeholder="Enter Email Address">
+      <button>JOIN</button>
+    </footer>
+  </main>
+  <script src="renderer.js"></script>
+</body>
+</html>

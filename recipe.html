@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tastebite</h1>
+    <nav>
+      <button onclick="goBack()">Back</button>
+    </nav>
+  </header>
+  <main>
+    <section id="recipeDetails" class="recipe-details"></section>
+    <button id="editButton" onclick="editRecipe()">Edit</button>
+    <textarea id="editDescription" class="hidden"></textarea>
+    <button id="saveButton" class="hidden" onclick="saveDescription()">Save</button>
+    <button id="removeButton" class="hidden" onclick="removeSavedRecipe()">Remove Saved Recipe</button>
+  </main>
+  <footer>
+    <p>Daily cooking tips and recipes to your inbox!</p>
+    <input type="email" placeholder="Enter Email Address">
+    <button>JOIN</button>
+  </footer>
+  <script src="recipe.js"></script>
+</body>
+</html>
